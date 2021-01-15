@@ -12,7 +12,7 @@
     "express",
     "hbs"
   ],
-  "author": "IvanGR",
+  "author": "Julio Lopez",
   "license": "ISC",
   "dependencies": {
     "@handlebars/allow-prototype-access": "^1.0.3",

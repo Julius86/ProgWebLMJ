@@ -1,16 +1,15 @@
-/*jshint esversion: 6 */
-const mongoose = require('mongoose');
-const Schema = mongoose.Schema;
+'use strict'
+
+const mongoose = require('mongoose')
+const Schema = mongoose.Schema
 
 const ProductSchema = Schema({
+  //  email:{type: String, unique:true,lowercase:true},
     name: String,
-    image: String,
-    price: { type: Number, default: 0 },
-    category: { type: String, enum: ['computers', 'phones', 'accessories', 'videogames'] },
-    description: String,
-    //Establecer un campo Obligatorio
-    //email: { type: String, unique: true, lowercase:true },
+    picture: String,
+    price:{type: Number, default: 0},
+    category: {type: String, enum: ['computers', 'phones', 'accesories']},
+    description: String
+})
 
-});
-
-module.exports = mongoose.model('Product', ProductSchema);
+module.exports = mongoose.model('Product',ProductSchema)
